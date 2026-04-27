@@ -1,0 +1,6 @@
+tuple=("priya","sruthi","anshu","seetha")
+print(tuple)
+print(tuple[0])
+print(tuple[2])
+print(tuple[3])
+print(tuple[4])

@@ -1,0 +1,24 @@
+
+    
+class ValueTooSmallError(Exception):
+    """raised when the input value is too small"""
+    pass
+class ValueTooLargeError(Exception):
+    """raised when the input value is too large"""
+    pass
+number=10
+while True:
+    try:
+        i_num=int(input("enter a number:"))
+        if i_num < number:
+            raise ValueTooSmallError
+        elif i_num > number:
+            raise ValueTooLargeError
+        break
+    except ValueTooSmallError:
+        print("this value is too small,try again!")
+        print()
+    except ValueTooLargeError:
+        print("this value is too large,try again!")
+        print()
+print("Congratulations! you guessed it correctly.")

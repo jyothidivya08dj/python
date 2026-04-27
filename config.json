@@ -1,0 +1,11 @@
+{
+    "DATABASE":{
+    "host": "localhost",
+    "port":3306
+  },
+  "SETTINGS":{
+      "debug":True
+    
+  }
+}
+        
